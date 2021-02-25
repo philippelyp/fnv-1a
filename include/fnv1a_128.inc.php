@@ -65,15 +65,15 @@ define('FNV1A_128_PRIME_SHIFT', 8);
 function fnv1a_128_str($string)
 {
 	// Create the offset basis as a base 2^16 array
-    $hash[8];
-    $hash[0] = FNV1A_128_OFFSET_0;
-    $hash[1] = FNV1A_128_OFFSET_1;
-    $hash[2] = FNV1A_128_OFFSET_2;
-    $hash[3] = FNV1A_128_OFFSET_3;
-    $hash[4] = FNV1A_128_OFFSET_4;
-    $hash[5] = FNV1A_128_OFFSET_5;
-    $hash[6] = FNV1A_128_OFFSET_6;
-    $hash[7] = FNV1A_128_OFFSET_7;
+	$hash[8];
+	$hash[0] = FNV1A_128_OFFSET_0;
+	$hash[1] = FNV1A_128_OFFSET_1;
+	$hash[2] = FNV1A_128_OFFSET_2;
+	$hash[3] = FNV1A_128_OFFSET_3;
+	$hash[4] = FNV1A_128_OFFSET_4;
+	$hash[5] = FNV1A_128_OFFSET_5;
+	$hash[6] = FNV1A_128_OFFSET_6;
+	$hash[7] = FNV1A_128_OFFSET_7;
 
 	// If we have characters to process
 	if (strlen($string) > 0) {

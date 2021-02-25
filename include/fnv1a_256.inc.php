@@ -73,23 +73,23 @@ define('FNV1A_256_PRIME_SHIFT', 8);
 function fnv1a_256_str($string)
 {
 	// Create the offset basis as a base 2^16 array
-    $hash[16];
-    $hash[0] = FNV1A_256_OFFSET_0;
-    $hash[1] = FNV1A_256_OFFSET_1;
-    $hash[2] = FNV1A_256_OFFSET_2;
-    $hash[3] = FNV1A_256_OFFSET_3;
-    $hash[4] = FNV1A_256_OFFSET_4;
-    $hash[5] = FNV1A_256_OFFSET_5;
-    $hash[6] = FNV1A_256_OFFSET_6;
-    $hash[7] = FNV1A_256_OFFSET_7;
-    $hash[8] = FNV1A_256_OFFSET_8;
-    $hash[9] = FNV1A_256_OFFSET_9;
-    $hash[10] = FNV1A_256_OFFSET_10;
-    $hash[11] = FNV1A_256_OFFSET_11;
-    $hash[12] = FNV1A_256_OFFSET_12;
-    $hash[13] = FNV1A_256_OFFSET_13;
-    $hash[14] = FNV1A_256_OFFSET_14;
-    $hash[15] = FNV1A_256_OFFSET_15;
+	$hash[16];
+	$hash[0] = FNV1A_256_OFFSET_0;
+	$hash[1] = FNV1A_256_OFFSET_1;
+	$hash[2] = FNV1A_256_OFFSET_2;
+	$hash[3] = FNV1A_256_OFFSET_3;
+	$hash[4] = FNV1A_256_OFFSET_4;
+	$hash[5] = FNV1A_256_OFFSET_5;
+	$hash[6] = FNV1A_256_OFFSET_6;
+	$hash[7] = FNV1A_256_OFFSET_7;
+	$hash[8] = FNV1A_256_OFFSET_8;
+	$hash[9] = FNV1A_256_OFFSET_9;
+	$hash[10] = FNV1A_256_OFFSET_10;
+	$hash[11] = FNV1A_256_OFFSET_11;
+	$hash[12] = FNV1A_256_OFFSET_12;
+	$hash[13] = FNV1A_256_OFFSET_13;
+	$hash[14] = FNV1A_256_OFFSET_14;
+	$hash[15] = FNV1A_256_OFFSET_15;
 
 	// If we have characters to process
 	if (strlen($string) > 0) {
